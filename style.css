@@ -6,7 +6,9 @@
     --azul-base:#2f2f9f;
     --cinza-claro:#778899;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -17,7 +19,7 @@
 body{
     display: flex;
     flex-flow: column wrap;
-    width: 100vw;
+    width: 100%;
 }
 
 /*===== HEADER =====*/
@@ -69,9 +71,10 @@ a{
     align-self: flex-start;
     margin-left: 90px;
     margin-top: 15%;
+    border-bottom: 2px var(--azul-base) solid;
 
 }
-h1{
+#s1 h1{
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-size: 5.5rem;
@@ -80,7 +83,7 @@ h1{
     line-height: 60px;
 
 }
-p{
+#s1 p{
     font-family: "Poppins", Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
@@ -91,6 +94,7 @@ button{
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 10px;
     background-color: var(--azul-base);
     border: 2px #2f2f9f solid;
     cursor: pointer;
@@ -112,4 +116,53 @@ button:hover{
     color: white;
     
 
+}
+
+/*===== SEGUNDA SECAO =====*/
+
+#s2{
+    background-color: var(--azul-base);
+    margin-top: 18%;
+    padding-top: 50px;
+    border-radius: 100px 100px 0px 0px;
+
+    
+}
+#s2 h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 5.5rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+ 
+
+}
+#s2 span{
+    text-decoration: line-through;
+}
+#principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#principal div{
+    width: 400px;
+    color: white;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+#principal img{
+    border-radius: 1000px;
+    padding: 10px;
+    border: 3px white solid;
+    transition: all .3s ease;
+    
+}
+#principal img:hover{
+    background-color: none;
+    padding: 0px;
+    transform: scale(1.1);
 }
