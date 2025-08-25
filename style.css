@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --azul-base:#2f2f9f;
+    --cinza-claro:#778899;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+}
+
+/*===== HEADER =====*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 50px;
+
+}
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color:var(--azul-base);
+    text-transform: uppercase;
+
+}
+span{
+    text-decoration: line-through;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+li{
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color:var(--cinza-claro);
+    transition: all .4s ease;
+}
+li:hover{
+    color: var(--azul-base);
+    transform: translateY(-3px);
+}
+a{
+    text-decoration: none;
+}
+
+/*===== PRIMEIRA SECAO =====*/
+
+#s1{
+    align-self: flex-start;
+    margin-left: 90px;
+    margin-top: 15%;
+
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 5.5rem;
+    color: var(--azul-base);
+    text-transform: uppercase;
+    line-height: 60px;
+
+}
+p{
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--cinza-claro);
+ 
+}
+button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--azul-base);
+    border: 2px #2f2f9f solid;
+    cursor: pointer;
+    border-radius: 100px;
+    color: white;
+    transition: all .4s ease;
+}
+button:hover{
+    background-color: white;
+    color: var(--azul-base);
+}
+.btn2{
+    background: none;
+    border: 2px #2f2f9f solid;
+    color: var(--azul-base);
+}
+.btn2:hover{
+    background-color: var(--azul-base);
+    color: white;
+    
+
+}
